@@ -6,6 +6,7 @@
 	while($row = mysqli_fetch_array($result)){
 		$response[] = $row;
 	}
+	echo "string";
 	echo json_encode(array("response"=>$response));
 	mysqli_close($con);
  ?>
